@@ -1,0 +1,50 @@
+{
+  // Visit https://aka.ms/tsconfig to read more about this file
+  "compilerOptions": {
+    // Environment Settings
+    "target": "es2018",
+    "module": "commonjs",
+    // File Layout
+    "outDir": "./dist",
+    "rootDir": "./",
+    // Recommended Options
+    "strict": false,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+
+    // See also https://aka.ms/tsconfig/module
+    "types": ["node"],
+    // For nodejs:
+    // "lib": ["esnext"],
+    // "types": ["node"],
+    // and npm install -D @types/node
+
+    // Other Outputs
+    //"sourceMap": true,
+    //"declaration": true,
+    //"declarationMap": true,
+
+    // Stricter Typechecking Options
+    //"noUncheckedIndexedAccess": true,
+    //"exactOptionalPropertyTypes": true,
+
+    // Style Options
+    // "noImplicitReturns": true,
+    // "noImplicitOverride": true,
+    // "noUnusedLocals": true,
+    // "noUnusedParameters": true,
+    // "noFallthroughCasesInSwitch": true,
+    // "noPropertyAccessFromIndexSignature": true,
+
+
+    //"jsx": "react-jsx",
+    //"verbatimModuleSyntax": true,
+    //"isolatedModules": true,
+    //"noUncheckedSideEffectImports": true,
+    //"moduleDetection": "force",
+  },
+  "include": ["**/*.ts"],
+  "exclude": ["node_modules"]
+}

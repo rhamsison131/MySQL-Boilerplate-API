@@ -11,11 +11,11 @@ export default function model(sequalize: any) {
         replacedByToken: { type: DataTypes.STRING },
         isExpired: {
             type: DataTypes.VIRTUAL,
-            get() { return Date.now() >= this.expires; }
+            get(this: any) { return Date.now() >= this.getDataValue('expires'); }
         },
         isActive: {
             type: DataTypes.VIRTUAL,
-            get() { return !this.revoked && !this.isExpired; }
+            get(this: any) { return !this.getDataValue('revoked') && !this.getDataValue('isExpired'); }
         }
     };
 
